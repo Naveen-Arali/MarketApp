@@ -1,0 +1,498 @@
+{
+  "contractName": "Productsale",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/navee/Documents/Projects/MarketApp/src/contracts/Productsale.sol\":\"Productsale\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/navee/Documents/Projects/MarketApp/src/contracts/Productsale.sol\":{\"keccak256\":\"0xf1fd1d4a0b8075d968b740d4ef1f4984f06b58cd697e2fb19580f8573edaa0e2\",\"urls\":[\"bzz-raw://726089c3a58ae6b941f7d3a81a50e6215cbab23c09a933b6369b515cb0a03fb0\",\"dweb:/ipfs/QmWYV8zqngewph5u5wrRaLFy6P5tWKZtCsTQ4Zf1iTWR3M\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72315820a075d736cb2a89e1b00081f8058b2919c6e23ed6006d2ab0ca7c2280701ff05964736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820a075d736cb2a89e1b00081f8058b2919c6e23ed6006d2ab0ca7c2280701ff05964736f6c63430005100032",
+  "sourceMap": "35:230:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;35:230:1;;;;;;;",
+  "deployedSourceMap": "35:230:1:-;;;;;",
+  "source": "pragma solidity >=0.5.0 <0.6.0;\r\n\r\ncontract Productsale{\r\n\r\n    struct Product{\r\n        uint pid;\r\n        string pname;\r\n        address payable owner;\r\n        uint price;\r\n        bool purchased;\r\n    }\r\n\r\n    mapping(uint => Product) Products;\r\n\r\n    \r\n\r\n\r\n\r\n}",
+  "sourcePath": "C:/Users/navee/Documents/Projects/MarketApp/src/contracts/Productsale.sol",
+  "ast": {
+    "absolutePath": "/C/Users/navee/Documents/Projects/MarketApp/src/contracts/Productsale.sol",
+    "exportedSymbols": {
+      "Productsale": [
+        74
+      ]
+    },
+    "id": 75,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:31:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 74,
+        "linearizedBaseContracts": [
+          74
+        ],
+        "name": "Productsale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Productsale.Product",
+            "id": 69,
+            "members": [
+              {
+                "constant": false,
+                "id": 60,
+                "name": "pid",
+                "nodeType": "VariableDeclaration",
+                "scope": 69,
+                "src": "89:8:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 59,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "89:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 62,
+                "name": "pname",
+                "nodeType": "VariableDeclaration",
+                "scope": 69,
+                "src": "108:12:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 61,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "108:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 64,
+                "name": "owner",
+                "nodeType": "VariableDeclaration",
+                "scope": 69,
+                "src": "131:21:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address_payable",
+                  "typeString": "address payable"
+                },
+                "typeName": {
+                  "id": 63,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "131:15:1",
+                  "stateMutability": "payable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 66,
+                "name": "price",
+                "nodeType": "VariableDeclaration",
+                "scope": 69,
+                "src": "163:10:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 65,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "163:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 68,
+                "name": "purchased",
+                "nodeType": "VariableDeclaration",
+                "scope": 69,
+                "src": "184:14:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 67,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "184:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Product",
+            "nodeType": "StructDefinition",
+            "scope": 74,
+            "src": "64:142:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 73,
+            "name": "Products",
+            "nodeType": "VariableDeclaration",
+            "scope": 74,
+            "src": "214:33:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Product_$69_storage_$",
+              "typeString": "mapping(uint256 => struct Productsale.Product)"
+            },
+            "typeName": {
+              "id": 72,
+              "keyType": {
+                "id": 70,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "222:4:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "214:24:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Product_$69_storage_$",
+                "typeString": "mapping(uint256 => struct Productsale.Product)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 71,
+                "name": "Product",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 69,
+                "src": "230:7:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Product_$69_storage_ptr",
+                  "typeString": "struct Productsale.Product"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 75,
+        "src": "35:230:1"
+      }
+    ],
+    "src": "0:265:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/navee/Documents/Projects/MarketApp/src/contracts/Productsale.sol",
+    "exportedSymbols": {
+      "Productsale": [
+        74
+      ]
+    },
+    "id": 75,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:31:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 74,
+        "linearizedBaseContracts": [
+          74
+        ],
+        "name": "Productsale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Productsale.Product",
+            "id": 69,
+            "members": [
+              {
+                "constant": false,
+                "id": 60,
+                "name": "pid",
+                "nodeType": "VariableDeclaration",
+                "scope": 69,
+                "src": "89:8:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 59,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "89:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 62,
+                "name": "pname",
+                "nodeType": "VariableDeclaration",
+                "scope": 69,
+                "src": "108:12:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 61,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "108:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 64,
+                "name": "owner",
+                "nodeType": "VariableDeclaration",
+                "scope": 69,
+                "src": "131:21:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address_payable",
+                  "typeString": "address payable"
+                },
+                "typeName": {
+                  "id": 63,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "131:15:1",
+                  "stateMutability": "payable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 66,
+                "name": "price",
+                "nodeType": "VariableDeclaration",
+                "scope": 69,
+                "src": "163:10:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 65,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "163:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 68,
+                "name": "purchased",
+                "nodeType": "VariableDeclaration",
+                "scope": 69,
+                "src": "184:14:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 67,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "184:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Product",
+            "nodeType": "StructDefinition",
+            "scope": 74,
+            "src": "64:142:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 73,
+            "name": "Products",
+            "nodeType": "VariableDeclaration",
+            "scope": 74,
+            "src": "214:33:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Product_$69_storage_$",
+              "typeString": "mapping(uint256 => struct Productsale.Product)"
+            },
+            "typeName": {
+              "id": 72,
+              "keyType": {
+                "id": 70,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "222:4:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "214:24:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Product_$69_storage_$",
+                "typeString": "mapping(uint256 => struct Productsale.Product)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 71,
+                "name": "Product",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 69,
+                "src": "230:7:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Product_$69_storage_ptr",
+                  "typeString": "struct Productsale.Product"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 75,
+        "src": "35:230:1"
+      }
+    ],
+    "src": "0:265:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xc788b45E4401dc5415B088483651D0ACC0Befc0e",
+      "transactionHash": "0xc640f10d373822e66b0c3f8e32829229567b1987ca313ca01a02821dbba97101"
+    }
+  },
+  "schemaVersion": "3.2.3",
+  "updatedAt": "2021-11-27T16:25:59.523Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
